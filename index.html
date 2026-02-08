@@ -1,30 +1,128 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>
-			AP Computer Science Principles Vocab Site
-		</title>
-		<link href="style1.css" rel = "stylesheet" type = "text/css"
-	</head>
-	<body>
-		<h1>
-			AP Computer Science Principles Vocab Site
-		</h1>
-		<h2>
-			Neil Mendpara
-		</h2>
-		<p> 
-			Welcome to my site
-		</p>
-		<img src= "images/rafa.jpg" title = "Rafael Nadal" style ="width:30%"/>
-	</body>
-
-	
-	
-	
-	
-	
-	
-	
-	
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Car-nival</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function carAlert() {
+      alert("You clicked a cool car!");
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>The Car-nival</h1>
+    <p>A Journey Through Amazing Supercars</p>
+  </header>
+  
+  <nav>
+    <h2>Navigation</h2>
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+	  <li><a href="tutorial.html">Tutorial</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section>
+      <h2>Supercar Collection</h2>
+      <p>Welcome to The Car-nival! Explore our curated collection of extraordinary supercars, featuring some of the most impressive vehicles ever created.</p>
+      
+      <div class="gallery-grid">
+        <div class="car-card">
+          <h3>McLaren Speedtail</h3>
+          <figure>
+            <img onclick="carAlert()" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/McLaren_Speedtail_Genf_2019_1Y7A5636.jpg/960px-McLaren_Speedtail_Genf_2019_1Y7A5636.jpg" alt="McLaren Speedtail" class="car-image">
+            <figcaption>McLaren Speedtail - Hybrid Hypercar</figcaption>
+          </figure>
+          <p>The McLaren Speedtail is a hypercar renowned for its extreme performance and aerodynamic design. It boasts a hybrid powertrain combining a twin-turbo 4.0-liter V8 with an electric motor, producing a total of 1,035 horsepower.</p>
+        </div>
+        
+        <div class="car-card">
+          <h3>Mercedes-AMG ONE</h3>
+          <figure>
+            <img onclick="carAlert()" src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Mercedes-AMG_One_IAA_2021_1X7A0108.jpg" alt="Mercedes-AMG ONE" class="car-image">
+            <figcaption>Mercedes-AMG ONE - F1 Technology for the Road</figcaption>
+          </figure>
+          <p>Featured prominently in Forza Horizon 5, the Mercedes-AMG ONE is a Formula 1-inspired hypercar with a hybrid powertrain, boasting a 1.6-liter turbocharged V6 engine and four electric motors, producing a combined output of 1,048 bhp.</p>
+        </div>
+      </div>
+      
+      <div class="gallery-grid">
+        <div class="car-card">
+          <h3>Koenigsegg Jesko</h3>
+          <figure>
+            <img onclick="carAlert()" src="https://upload.wikimedia.org/wikipedia/commons/8/82/Koenigsegg_Jesko_Auto_Zuerich_2023_1X7A0924.jpg" alt="Koenigsegg Jesko" class="car-image">
+            <figcaption>Koenigsegg Jesko - Speed Redefined</figcaption>
+          </figure>
+          <p>A rare gem in Forza Horizon 5, the Jesko features a 5.0-liter twin-turbocharged V8 engine producing 1280 hp (1600 hp on E85), coupled with a 9-speed Koenigsegg Light Speed Transmission, making it one of the fastest cars in the world.</p>
+        </div>
+        
+        <div class="car-card">
+          <h3>Lamborghini Sesto Elemento</h3>
+          <figure>
+            <img onclick="carAlert()" src="https://upload.wikimedia.org/wikipedia/commons/1/1f/Lamborghini_Sesto_Elemento_%2816107850781%29.jpg" alt="Lamborghini Sesto Elemento" class="car-image">
+            <figcaption>Lamborghini Sesto Elemento - Carbon Fiber Masterpiece</figcaption>
+          </figure>
+          <p>One of the most coveted vehicles in Forza Horizon 5, the Sesto Elemento is built primarily of carbon fiber, boasting a 570 horsepower V10 engine and a curb weight of just 999 kg (2,202 lbs), offering an exceptional power-to-weight ratio.</p>
+        </div>
+      </div>
+    </section>
+    
+    <section>
+      <h2>Performance Comparison</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Car Model</th>
+            <th>Top Speed</th>
+            <th>Power Output</th>
+            <th>Weight</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>McLaren Speedtail</td>
+            <td>250 mph</td>
+            <td>1,035 hp</td>
+            <td>1,430 kg</td>
+          </tr>
+          <tr>
+            <td>Mercedes-AMG ONE</td>
+            <td>217 mph</td>
+            <td>1,048 hp</td>
+            <td>1,695 kg</td>
+          </tr>
+          <tr>
+            <td>Koenigsegg Jesko</td>
+            <td>278+ mph</td>
+            <td>1,280 hp</td>
+            <td>1,320 kg</td>
+          </tr>
+          <tr>
+            <td>Lamborghini Sesto Elemento</td>
+            <td>220 mph</td>
+            <td>570 hp</td>
+            <td>999 kg</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    
+    <section class="feedback-section">
+      <h2>Share Your Feedback</h2>
+      <p>We'd love to hear your thoughts about our supercar collection.</p>
+      <div class="iframe-container">
+        <iframe width="640px" height="480px" src="https://forms.office.com/Pages/ResponsePage.aspx?id=-x3OL5-ROEmquMR_D8kYLfLm0SadhDlBmdQaxS61771UQUpHTUE0SUE2WVQzV0syVjYxQUFVUUNXRi4u&embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen></iframe>
+      </div>
+    </section>
+  </main>
+  
+  <footer>
+    <p>© 2025 The Car-nival</p>
+    <p>Contact us at: <a href="mailto:car-nival@gmail.com">car-nival@gmail.com</a></p>
+  </footer>
+</body>
 </html>
